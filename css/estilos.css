@@ -79,6 +79,6 @@ body{
   }
   
   .img-portfolio{
-      width: 90px;
-      height: 120px;
+    justify-content: center;
+    width: 98vw;
   }
