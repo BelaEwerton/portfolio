@@ -1,12 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-image: url('../img/bg.jpg');
-    background-size: auto 100vh;
-    font-family: arial;
-    height: 100vh;
-  }
+        background-image: url('../img/bg.jpg');
+        background-size: auto 160vh;
+        font-family: arial;
+        font-size: 14px;
+        height: 210vh;
+    }
+
+/* se a tela tiver pelo menos 400px vai carregar esse tamanho tb conhecido como breakpoint*/
+
+    @media (min-whidth: 400px) {
+        body {
+            font-size: 16px;
+        }
+        
+    }
+    @media (min-whidth: 600px) {
+        body {
+            font-size: 18px;
+        }
+    }
+
+    @media (min-whidth: 1200px) {
+            body {
+                font-size: 20px;
+            }
+    }
+
+    header{
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
   
   .menuTopo{
     background-color:grey;  
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   .menuTopo li{
     list-style: none;
@@ -15,14 +52,18 @@ body{
     display: flex;
     justify-content: space-evenly
     }
-  
+  .menuTopo a{
+      display: block;
+      padding: 10px 20px;
+  }
   a{
-    color: whitesmoke;
+    color: sandybrown;
     text-decoration: none;
     }
   a:hover{
-    color: black;
+    color: whitesmoke;
     text-decoration: underline;
+    background: rgb(105, 100, 100);
   }
   
   .site-subtitle,
@@ -30,7 +71,14 @@ body{
     color: grey;
     text-align: center;
   }
+  .site-title{
+      font-size: 3em;
+  }
   .site-subtitle{
     font-style: italic
   }
   
+  .img-portfolio{
+      width: 90px;
+      height: 120px;
+  }
