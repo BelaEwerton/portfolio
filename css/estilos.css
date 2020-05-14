@@ -105,28 +105,27 @@ body{
     margin-right: 1em;
   }
 
-  .portfolio .grid {
+   .portfolio .grid {
     display: grid;
     align-content: center;
     justify-content: center;
-    grid-template-columns: repeat(4, 240px);
-  
+    grid-template-columns: repeat(4, 160px); 
 }
 
   @media (min-widht: 560px) {
     .portfolio .grid {
-      grid-template-columns: repeat(2, 240px);
+      grid-template-columns: repeat(2, 160px);
     }
   }
   @media (min-widht: 850px) {
     .portfolio .grid {
-      grid-template-columns: repeat(3, 240px);
+      grid-template-columns: repeat(3, 160px);
     }
   }
 
   @media (min-widht: 1000px) {
     .portfolio .grid { 
-      grid-template-columns: repeat(4, 240px);
+      grid-template-columns: repeat(4, 160px);
     }
   }
 
