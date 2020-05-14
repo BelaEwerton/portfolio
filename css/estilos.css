@@ -5,27 +5,23 @@
 }
 
 body{
-        background-image: url('../img/bg.jpg');
-        background-size: auto 160vh;
-        font-family: arial;
+        background-size: auto;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
         font-size: 14px;
-        height: 210vh;
     }
 
 /* se a tela tiver pelo menos 400px vai carregar esse tamanho tb conhecido como breakpoint*/
-
     @media (min-whidth: 400px) {
         body {
             font-size: 16px;
         }
-        
     }
     @media (min-whidth: 600px) {
         body {
             font-size: 18px;
         }
     }
-
     @media (min-whidth: 1200px) {
             body {
                 font-size: 20px;
@@ -33,14 +29,14 @@ body{
     }
 
     header{
-        height: 50vh;
+        height: 60vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
   
   .menuTopo{
-    background-color:grey;  
+    background-color: black;  
     position: fixed;
     width: 100vw;
     top: 0;
@@ -50,35 +46,98 @@ body{
   }
   .menuTopo ul{
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
     }
   .menuTopo a{
       display: block;
       padding: 10px 20px;
   }
-  a{
+  .menuTopo a{
     color: sandybrown;
     text-decoration: none;
     }
-  a:hover{
-    color: whitesmoke;
+  .menuTopo a:hover{
+    color: black;
     text-decoration: underline;
-    background: rgb(105, 100, 100);
+    background-image: linear-gradient(to right, #8c07f4, #b500d8, #cd00bd, #db00a5, #e20090, #f00d7d, #f9256a, #fd3c58, #ff6040, #ff8127, #f6a10a, #e5bf05);
   }
-  
-  .site-subtitle,
-  .site-title{
-    color: grey;
+
+  a{
+    color: black;
+    text-decoration: none;
+    }
+  a:hover{
+      color: grey;
+      background-image: linear-gradient(to right, #8c07f4, #b500d8, #cd00bd, #db00a5, #e20090, #f00d7d, #f9256a, #fd3c58, #ff6040, #ff8127, #f6a10a, #e5bf05);
+    }
+
+  .minhaFoto {
+    background-image: url("../img/bg03.jpg");
+    width: 100vw;
+    background-repeat: no-repeat;    
+    padding-top: 10em;
+  }
+  .minhaFoto .site-title{
+    color: whitesmoke;
     text-align: center;
+    font-size: 3em;
+    font-family: 'Pangolin', cursive; 
+    padding-top: 8em;
   }
-  .site-title{
-      font-size: 3em;
+  .minhaFoto .site-subtitle{
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Roboto Light', sans-serif;
+    font-style: normal;
+    line-height: 1.3em;
+    padding-bottom: 15em;
+
   }
-  .site-subtitle{
-    font-style: italic
+
+  .portfolio{
+    padding: 1em;
+    height: 100vh;
   }
-  
-  .img-portfolio{
+
+  .portfolio h2{
+    font-family: 'Pangolin', cursive;
+    color: rgb(69, 180, 245);
+    margin-right: 1em;
+  }
+
+  .portfolio .grid {
+    display: grid;
+    align-content: center;
     justify-content: center;
-    width: 98vw;
+    grid-template-columns: repeat(4, 240px);
+  
+}
+
+  @media (min-widht: 560px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(2, 240px);
+    }
+  }
+  @media (min-widht: 850px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(3, 240px);
+    }
+  }
+
+  @media (min-widht: 1000px) {
+    .portfolio .grid { 
+      grid-template-columns: repeat(4, 240px);
+    }
+  }
+
+.potfolio figure {
+  text-align: center;
+}
+
+  .img-portfolio{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: -35px;
+    border-radius: 8px;
   }
