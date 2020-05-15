@@ -120,12 +120,12 @@ body{
     height: calc(50vh - 1em - 20px);
 }
 
-    @media (min-width: 360px) {
+   @media (min-width: 360px) {
     .portfolio .grid {
     grid-template-columns: repeat(2, 160px);
     align-content: center;
     justify-content: center;
-    height: calc(70vh - 2em - 20px);
+    height: calc(50vh - 2em - 20px);
   }
 
     @media (min-width: 560px) {
@@ -133,7 +133,7 @@ body{
       grid-template-columns: repeat(3, 160px);
       align-content: center;
       justify-content: left;
-      height: calc(80vh - 2em - 20px);
+      height: calc(60vh - 5em - 20px);
     }
   }
     @media (min-width: 880px) {
@@ -141,9 +141,8 @@ body{
       grid-template-columns: repeat(4, 160px);
       align-content: center;
       justify-content: left;
-      height: calc(100vh - 3em - 20px);
+      height: calc(80vh - 5em - 20px);
     }
-  }
 
 .potfolio figure {
   text-align: center;
@@ -175,5 +174,5 @@ body{
   .contato a:active,
   .contato a:hover  {
     text-decoration: none;
-    text-shadow: 0px 0px 10px rgba(223, 247, 7, 0.877);
+    text-shadow: 0px 0px 10px rgba(223, 247, 7, 0.88);
   }
