@@ -22,8 +22,6 @@ body{
     }
     @media (min-width: 600px) {
         body {
-          background-attachment: fixed;
-          background-size: cover;
             font-size: 14px;
         }
     }
@@ -78,20 +76,10 @@ body{
       color: grey;
     }
 
-.site-subtitle, 
-.site-title {
-  color: whitesmoke;
-  text-align: center;
-}
-
-.site-title {
-  font-size: 3em;
-  font-family: 'Pangolin', cursive; 
-}
-
-.site-subtitle {
+.titulo {
+ text-align: center;
  font-family: 'Roboto Light', sans-serif;
- line-height: 1.3em;
+ line-height: 1em;
  font-size: 2em;
 }
 
@@ -102,7 +90,7 @@ body{
 
   .portfolio{
     padding: 2em;
-    margin: 0 3em;
+    margin: 5em 2em;
   }
 
   .potfolio figure {
@@ -119,7 +107,7 @@ body{
 
    .portfolio .grid {
     display: grid;
-    gap: 2em;
+    gap: 5em;
     grid-template-columns: 160px;
     align-content: center;
     justify-content: center;
@@ -149,7 +137,6 @@ body{
       height: calc(100vh - 5em - 130px);
     }
   }
-
   .img-portfolio{
     width: 100%;
     height: 100px;
@@ -158,11 +145,9 @@ body{
     border-radius: 8px;
     transition: transform 500ms;
   }
-
   .img-portfolio:hover {
     transform: scale(1.2) rotate(-2deg);
   }
-
   .img-bela{
     width: 100%;
     height: 100px;
@@ -171,30 +156,28 @@ body{
     border-radius: 8px;
   }
 
-  .sobre h2{
-    font-family: 'Pangolin', cursive;
-    color: black;
-    margin-right: 1em;
-    font-size: 2em;
-  }
-  .sobre p{
-    color: gray;
-    text-indent: 1em;
-    margin-bottom: 1.4em;
-    text-align: justify;
-
-  }
-
-  .sobre .avatar{
-    float: left;
-    margin: 0 15px;
-  }
-
   .sobre{
     height: auto;
     left: auto;
     padding: 2em;
   }
+  .sobre h2{
+    font-family: 'Pangolin', cursive;
+    color: black;
+    margin-right: 1em;
+    font-size: 1em;
+  }
+  .sobre p{
+    color: gray;
+    margin-bottom: 2em;
+    text-align: justify;
+
+  }
+  .sobre .avatar{
+    float: left;
+    margin: 0 15px;
+  }
+
 
   .contato{
     padding: 1em;
