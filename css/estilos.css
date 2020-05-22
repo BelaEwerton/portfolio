@@ -82,41 +82,38 @@ body{
  line-height: 1em;
  font-size: 2em;
 }
-
 .img-topo{
   width: 100vw;
   height: auto;
 }
 
   .portfolio{
-    padding: 2em;
-    margin: 7em 2em;
+    align-content: center;
+    justify-content: center;
+    padding-top: 1em;
   }
 
   @media (min-width: 360px) {
     .portfolio{
-      background:20% 80vw;
-      height: 50vh;
-      padding: 2em;
-      margin: 6em 2em;
+      align-content: center;
+      justify-content: center;
+      padding-top: 3em;
     }
   }
 
-  @media (min-width: 520px) {
+  @media (min-width: 560px) {
   .portfolio{
-    background:20% 80vw;
-    height: 50vh;
-    padding: 2em;
-    margin: 4em 2em;
+    align-content: center;
+    justify-content: center;
+    padding-top: 8em;
   }
 }
 
 @media (min-width: 880px) {
   .portfolio{
-    background:20% 80vw;
-    height: 50vh;
-    padding: 2em;
-    margin: 3em 2em;
+    align-content: center;
+    justify-content: center;
+    padding-top: 15em;
   }
 }
 
@@ -134,7 +131,7 @@ body{
 
    .portfolio .grid {
     display: grid;
-    gap: 1em;
+    gap: 2em;
     grid-template-columns: 160px;
     align-content: center;
     justify-content: center;
@@ -146,16 +143,14 @@ body{
     grid-template-columns: repeat(2, 160px);
     align-content: center;
     justify-content: center;
-    height: calc(60vh - 2em - 20px);
   }
 }
-    @media (min-width: 520px) {
+    @media (min-width: 580px) {
     .portfolio .grid {
       gap: 3em;
       grid-template-columns: repeat(3, 160px);
       align-content: center;
       justify-content: center;
-      height: calc(100vh - 5em - 130px);
     }
   }
     @media (min-width: 880px) {
@@ -164,16 +159,12 @@ body{
       grid-template-columns: repeat(4, 160px);
       align-content: center;
       justify-content: center;
-      height: calc(100vh - 5em - 130px);
     }
   }
-  @media (min-width: 950px) {
+  @media (min-width: 1200px) {
     .portfolio .grid {
       gap: 5em;
       grid-template-columns: repeat(5, 160px);
-      align-content: center;
-      justify-content: center;
-      height: calc(100vh - 5em - 130px);
     }
   }
 
