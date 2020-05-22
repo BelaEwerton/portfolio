@@ -90,8 +90,17 @@ body{
 
   .portfolio{
     padding: 2em;
-    margin: 5em 2em;
+    margin: 6em 2em;
   }
+
+  @media (min-width: 700px) {
+  .portfolio{
+    background:20% 80vw;
+    height: 50vh;
+    padding: 2em;
+    margin: 4em 2em;
+  }
+}
 
   .potfolio figure {
     text-align: center;
