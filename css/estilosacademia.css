@@ -1,0 +1,161 @@
+
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+        background-color: white;
+        background:auto 100vw;
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        font-size: 14px;
+    }
+
+/* se a tela tiver pelo menos 400px vai carregar esse tamanho tb conhecido como breakpoint*/
+    @media (min-width: 400px) {
+        body {
+            font-size: 12px;
+        }
+    }
+    @media (min-width: 600px) {
+        body {
+            font-size: 14px;
+        }
+    }
+    @media (min-width: 1200px) {
+            body {
+                font-size: 16px;
+            }
+    }
+
+    header{
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+  .menuTopo{
+    background-color: black;  
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+  }
+  .menuTopo ul{
+    display: flex;
+    justify-content: space-around;
+    }
+  .menuTopo li{
+      list-style: none;
+    }
+  .menuTopo a{
+      display: block;
+      padding: 10px 20px;
+      transition: background-color 1s, color 1s;
+  }
+  .menuTopo a{
+    color: sandybrown;
+    text-decoration: none;
+    }
+  .menuTopo a:active,
+  .menuTopo a:hover{
+    color: black;
+    text-decoration: underline;
+    background-image: linear-gradient(to right, #8c07f4, #b500d8, #cd00bd, #db00a5, #e20090, #f00d7d, #f9256a, #fd3c58, #ff6040, #ff8127, #f6a10a, #e5bf05);
+  }
+
+  a{
+    color: black;
+    text-decoration: none;
+    }
+  a:hover{
+      color: grey;
+    }
+
+.titulo {
+ text-align: center;
+ font-family: 'Roboto Light', sans-serif;
+ line-height: 1em;
+ font-size: 2em;
+}
+
+.img-topo{
+  width: 100vw;
+  height: auto;
+}
+
+  .projetos{
+    align-content: center;
+    justify-content: center;
+    padding-top: 1em;
+  }
+  @media (min-width: 560px) {
+    .projetos{
+      align-content: center;
+      justify-content: center;
+      padding-top: 8em;
+    }
+    }
+  @media (min-width: 880px) {
+    .projetos{
+      align-content: center;
+      justify-content: center;
+      padding-top: 15em;
+    }
+  }
+  .contato h2,
+  .projetos h2{
+    font-family: 'Pangolin', cursive;
+    color: rgb(1, 15, 22);
+    margin-right: 1em;
+    font-size: 1em;
+  }
+
+  .projetos .grid {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .projetos figure {
+    text-align: center;
+  }
+  .img-projeto {
+    height: auto;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .contato{
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+  .contato{
+    height: auto;
+    left: auto;
+    margin: 0 20px;
+    }
+  
+  .contato .icons {
+    text-align: center;
+  }
+
+  .contato a{
+    color: rgb(219, 183, 21);
+    font-size: 2em;
+  }
+  
+  .contato a:active,
+  .contato a:hover  {
+    text-decoration: none;
+    text-shadow: 0px 0px 15px rgba(223, 247, 7, 0.877);
+  }
+
+
+/**/
